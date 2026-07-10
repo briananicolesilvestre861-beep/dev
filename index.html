@@ -1,15 +1,310 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
 
-<h1>Hi im briana</h1>
-<p>Suntukan ano tara?.</p>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Flavours BLCN | Modern Culinary Art</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5e3d47",
+                    "surface-dim": "#dadada",
+                    "on-error": "#ffffff",
+                    "tertiary": "#76535d",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#900038",
+                    "surface-container-low": "#f3f3f3",
+                    "primary-container": "#e21d60",
+                    "on-surface": "#1a1c1c",
+                    "background": "#f9f9f9",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary-fixed": "#281719",
+                    "primary-fixed-dim": "#ffb2be",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#ffb2be",
+                    "tertiary-fixed-dim": "#e8bbc7",
+                    "inverse-surface": "#2f3131",
+                    "on-secondary-container": "#755d5f",
+                    "secondary-fixed": "#fbdbde",
+                    "surface-container": "#eeeeee",
+                    "outline": "#8f6f73",
+                    "tertiary-fixed": "#ffd9e2",
+                    "inverse-on-surface": "#f1f1f1",
+                    "secondary-fixed-dim": "#debfc2",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#fffdff",
+                    "on-primary-container": "#fffdff",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#e3bdc2",
+                    "on-tertiary-fixed": "#2d131c",
+                    "on-secondary-fixed-variant": "#574144",
+                    "surface": "#f9f9f9",
+                    "on-background": "#1a1c1c",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-tint": "#bc004b",
+                    "on-primary-fixed": "#400014",
+                    "surface-bright": "#f9f9f9",
+                    "on-surface-variant": "#5b3f44",
+                    "secondary": "#70585b",
+                    "secondary-container": "#f8d8db",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed": "#ffd9de",
+                    "primary": "#ba004a",
+                    "tertiary-container": "#916b76"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "24px",
+                    "section-padding": "120px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Playfair Display"],
+                    "label-caps": ["Work Sans"],
+                    "headline-sm": ["Playfair Display"],
+                    "body-lg": ["Work Sans"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Work Sans"]
+            },
+            "fontSize": {
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .parallax-bg {
+            background-attachment: scroll;
+        }
+        @media (min-width: 1024px) {
+            .parallax-bg {
+                background-attachment: fixed;
+            }
+        }
+        .editorial-shadow {
+            shadow-[0_-4px_20px_rgba(226,29,96,0.08)];
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl flex justify-between items-center px-margin-mobile py-4 w-full transition-all duration-300 ease-in-out">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer hover:opacity-70 transition-opacity" data-icon="menu">menu</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile tracking-tighter text-primary dark:text-primary-fixed-dim">Flavours BLCN</h1>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer hover:opacity-70 transition-opacity" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</header>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden" id="home">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A high-resolution, overhead shot of a gourmet seafood dish plated with extreme precision on a matte white ceramic plate. The food features vibrant microgreens, edible flowers, and a rich reduction sauce. The scene is bathed in soft, natural morning light, creating delicate shadows. The overall aesthetic is minimalist, expensive, and modern, dominated by bone-white tones and subtle magenta accents in the garnishes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIf-3MpeNiF4oQK40IszZvEl4pH1aprrtjwiDrv_FGW9gKHd9MWSnvY3bzjtK3cQmxGivMB5U48V_HmirJ0D0qKu32SFqtEc8Q9Khhj9qdtMOqcLROmYZSf9Sq7gBL5ZHpfWlV3_LR88y3z8iAWZc9TucKpv85FZI-uOrFkREBdsgOgcrZ3gwxt6CHo1lFOyJlai1QUCHE3wwhWdxfzm9PyDUUprvHKn0mtGX_79X92k8DQ7aVOnTzUfXby1IUGa8tfUOWtJnmzeU')"></div>
+</div>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="relative z-10 text-center px-margin-mobile mt-12">
+<span class="font-label-caps text-label-caps text-primary tracking-widest block mb-4 animate-fade-in">MODERN ARTISANAL KITCHEN</span>
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-primary-container drop-shadow-sm mb-6 max-w-2xl mx-auto">Sensory journeys curated through flavour.</h2>
+<div class="flex justify-center gap-6">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:scale-105 transition-transform active:scale-95">RESERVE A TABLE</button>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-24 px-margin-mobile bg-surface-container-lowest text-center">
+<div class="max-w-xl mx-auto">
+<span class="material-symbols-outlined text-primary mb-6 scale-150" data-icon="restaurant">restaurant</span>
+<p class="font-headline-sm text-headline-sm italic text-secondary leading-relaxed mb-8">
+                    "We believe that a dish is a conversation between the earth and the artist. At Flavours BLCN, we speak through the textures of heritage and the vibrancy of contemporary craft."
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto">
+                    Founded on the principles of minimalist luxury, our kitchen focuses on seasonal purity and the unexpected joy of single-origin ingredients.
+                </p>
+</div>
+</section>
+<!-- Featured Menu Section (Bento-style Grid) -->
+<section class="py-24 px-margin-mobile max-w-container-max mx-auto" id="restaurant_menu">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">CURATED SELECTION</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Seasonal Highlights</h3>
+</div>
+<div class="hidden md:block">
+<button class="border-b border-primary text-primary font-label-caps text-label-caps py-1">VIEW FULL MENU</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Featured Dish -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative aspect-video overflow-hidden mb-4 bg-surface-container-high rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up shot of a perfectly seared Wagyu beef medallion, sliced to reveal a perfect medium-rare center. The meat is garnished with a single sprig of thyme and coarse sea salt, resting on a bed of silky parsnip purée. The lighting is moody and directional, highlighting the rich textures. The color palette is earthy with deep pink tones in the meat, echoing the brand's primary color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEceYAtG_Ec_75F9QBKAgsRLAaJqa8urVUdl4hO895TbVvaM8o9a3dhZY3OJO9eC8R-c3qkKQRVqFWc8ww9oX1kA2BhPuSfweNX2Z0jSvVQoLktY1TNsBlKr5U-IY5OLPqqMWjjq60c_vVLvp-zjqWKopwu8_eiZtzyDr7i5q08Eo3tk_9rl2OaSRV8ivEg5pXws3XSCOQ3WVVEL6RTqb_6dMDWWtKTZv-5RcXCqVsPT5GFldSGAtScxnUIF0qXF24zFu1R48bOIs"/>
+<div class="absolute top-4 left-4 bg-primary text-white font-label-caps text-[10px] px-3 py-1 rounded-full">SIGNATURE</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Aged Wagyu &amp; Parsnip</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">45-day dry-aged wagyu, vanilla-infused parsnip, red wine reduction.</p>
+</div>
+<span class="font-label-caps text-label-caps text-primary pt-2">$54.00</span>
+</div>
+</div>
+<!-- Side Dishes Stack -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden mb-4 bg-surface-container-high rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A delicate dessert consisting of a spheres of white chocolate mousse, fresh raspberries, and a translucent pink sugar shard. The arrangement is artistic and asymmetrical on a stone-grey plate. Soft focus background. High-key lighting emphasizing the bright, airy textures and the pops of magenta." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjgPMGx3pg33XOvIT7pLpySPUYQgOuG6XNNNnt1fAAWWwQ5Wc3JAs-m16dgZJT1ygXn9FvMKZbj8BWgP6O_EvlAnGnxcRQYb2OmhKGf3ZKECAkRkN-c5tT7t1Rqyl3xHnAByKGEb1GgtqPGuk2PXrjS4c4VXxpX8xKMYw4pUkXE-m8gA0jA7kDIPxrIwykumVtvBYwWj5DzZcTy9ZlaZ-8v9xbq5446iGsYTtHH0x8TM7kWkkXlxAYai0q0vcjq-eL15rnfM7zxSc"/>
+</div>
+<div class="flex justify-between items-center">
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface">Rose Petal Sorbet</h4>
+<span class="font-label-caps text-label-caps text-secondary">$18.00</span>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden mb-4 bg-surface-container-high rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Hand-rolled pappardelle pasta with shaved black truffles and a rich butter sauce. Served in a minimalist bowl. The lighting is warm and inviting, focusing on the glossy texture of the pasta. Minimalist composition with lots of negative space around the bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHuPthi2zmTXu1MNjHIds95zbkwT2UVV61dhrfzxH06YlDTEmQpT8tciUnAjUL8cLN3fUi3pQRSBErQpUUamYWy1eowHuGLXQXKay9obPYBJdYVuMXjJy2WBlETForkaIOlVF6M0q5ymsEi55QmktG7XJsxoKA_8kOh0l8OgWhAAFi1oCnGO_ryJgcvMM2HkvTYlD92flqv3qztoFqY6i5dux25Ol9Ad7AOidqaX5QqN9diAvnnfWRg9tgV6zj6uWYyQP4MvKMNS8"/>
+</div>
+<div class="flex justify-between items-center">
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface">Black Truffle Pasta</h4>
+<span class="font-label-caps text-label-caps text-secondary">$32.00</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Aesthetic Break / Glass Card -->
+<section class="relative py-32 flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale opacity-30" data-alt="An abstract, blurry background of a high-end restaurant interior at night. Warm glowing lights, reflections on glassware, and hints of elegant furniture. The colors are muted neutrals with soft pink glows. A dreamy, atmospheric scene that evokes feelings of sophistication and intimacy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClm8Lt32XaN3tUaFDd6E7iwdK41-0LVC-amfndV_PKqTngVzK_US3mquEq19EDbFcU9l4lKejdHx_-mpB3Y8XNcoVNkp_VCnlLpIc4_WNyp5gJiBtW2KT5ufnVUFdykNGRm5n84QMwPSWikJjud1z9wHDacpKtfc8_-tI-4o-QQzFworvPmcPr9Q-zBlidjhX-sr0VJnpJBERm3Ek2YnKicp9b806cWdHoiXD_WEKpDorpFNcdqMR7TS1e1eSeX38e6z7o6GAIPGM"/>
+</div>
+<div class="relative z-10 w-full max-w-lg mx-margin-mobile">
+<div class="bg-surface/40 backdrop-blur-xl border border-white/20 p-12 text-center rounded-xl editorial-shadow">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="event_available">event_available</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Intimate Gatherings</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Host your private events in an environment designed for connection and culinary wonder.</p>
+<button class="border border-primary text-primary font-label-caps text-label-caps px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all">INQUIRE NOW</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest dark:bg-surface-container-low flex flex-col items-center gap-4 py-12 px-margin-mobile w-full border-t border-secondary/10">
+<div class="flex flex-col items-center gap-6 mb-8">
+<h2 class="font-label-caps text-label-caps text-primary">Flavours BLCN</h2>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Press Kit</a>
+</div>
+</div>
+<!-- Social Icons (Manual addition for visual completeness) -->
+<div class="flex gap-6 mb-8">
+<span class="material-symbols-outlined text-secondary hover:text-primary transition-colors cursor-pointer" data-icon="public">public</span>
+<span class="material-symbols-outlined text-secondary hover:text-primary transition-colors cursor-pointer" data-icon="camera">camera</span>
+<span class="material-symbols-outlined text-secondary hover:text-primary transition-colors cursor-pointer" data-icon="mail">mail</span>
+</div>
+<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed">© 2024 Flavours BLCN. Crafted by dev 0</p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-margin-mobile pb-safe bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-[0_-4px_20px_rgba(226,29,96,0.08)] z-50 md:hidden">
+<div class="flex items-center justify-center bg-primary-container dark:bg-primary-fixed-dim text-on-primary-container dark:text-on-primary-fixed-variant rounded-full p-3 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<div class="flex items-center justify-center text-secondary dark:text-secondary-fixed-dim p-3 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+</div>
+<div class="flex items-center justify-center text-secondary dark:text-secondary-fixed-dim p-3 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+</div>
+<div class="flex items-center justify-center text-secondary dark:text-secondary-fixed-dim p-3 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+</nav>
+<script>
+        // Simple micro-interactions for the landing page
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
 
-</body>
-</html>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    }
+                });
+            }, observerOptions);
 
+            // Apply fade-in to sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+                observer.observe(section);
+            });
 
-
+            // Smooth Scroll for Bottom Nav
+            const navIcons = document.querySelectorAll('nav div');
+            const sections = ['home', 'restaurant_menu', 'events', 'location'];
+            
+            navIcons.forEach((icon, index) => {
+                icon.addEventListener('click', () => {
+                    const targetId = sections[index];
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    
+                    // Update active state visual
+                    navIcons.forEach(i => {
+                        i.className = 'flex items-center justify-center text-secondary dark:text-secondary-fixed-dim p-3 hover:scale-110 transition-transform cursor-pointer';
+                    });
+                    icon.className = 'flex items-center justify-center bg-primary-container dark:bg-primary-fixed-dim text-on-primary-container dark:text-on-primary-fixed-variant rounded-full p-3 hover:scale-110 transition-transform cursor-pointer';
+                });
+            });
+        });
+    </script>
+</body></html>
